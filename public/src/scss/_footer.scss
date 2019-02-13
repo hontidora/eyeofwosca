@@ -1,0 +1,16 @@
+.footer {
+  @extend .dark;
+
+  &__container {
+    @extend .container;
+  }
+
+  &__title {
+    font-size: 26px;
+    line-height: 50px;
+  }
+
+  &__copyright {
+    color: #ACACAC;
+  }
+}

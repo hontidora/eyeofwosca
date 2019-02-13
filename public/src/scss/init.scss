@@ -1,0 +1,34 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+
+@import '../../../node_modules/bootstrap/scss/mixins';
+@import '../../../node_modules/bootstrap/scss/reboot';
+@import '../../../node_modules/bootstrap/scss/type';
+
+@import '../../../node_modules/bootstrap/scss/utilities/spacing';
+@import '../../../node_modules/bootstrap/scss/utilities/text';
+@import '../../../node_modules/bootstrap/scss/utilities/flex';
+
+@import '../../../node_modules/bootstrap/scss/grid';
+
+@import 'typo';
+@import 'common';
+@import 'header';
+@import 'footer';
+@import 'soundscape';
+@import 'contact';
+@import 'description';
+@import 'global';
+@import 'share';
+
+canvas {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -10;
+}
+
+.a2a_button_facebook_messenger span {
+  background-color: transparent !important;
+}

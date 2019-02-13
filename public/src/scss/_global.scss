@@ -1,0 +1,35 @@
+.global {
+  height: 160px;
+  background-image: url('../img/global.png'); //todo: legyen jpg
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    @include media-breakpoint-up(lg) {
+      width: 160px;
+      margin-right: 60px;
+    }
+
+    text-transform: uppercase;
+  }
+
+  &__container {
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    @extend .container;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__contact {
+    @include media-breakpoint-down(lg) {
+      margin: 0;
+    }
+  }
+}

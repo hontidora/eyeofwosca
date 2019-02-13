@@ -1,0 +1,13 @@
+.contact {
+  @extend .list-unstyled, .list-inline;
+
+  &__item {
+    @extend .list-inline-item;
+
+    @include media-breakpoint-up(lg) {
+      &:not(:last-of-type) {
+        margin-right: 40px;
+      }
+    }
+  }
+}

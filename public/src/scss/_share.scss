@@ -1,0 +1,35 @@
+.share {
+  &__container {
+    @include media-breakpoint-up(lg) {
+      height: 115px;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+    }
+    @include media-breakpoint-down(lg) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    @extend .container;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__side {
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__contact {
+    line-height: 63px;
+    margin: 0;
+  }
+
+  &__label {
+    font-size: 16px;
+    margin-right: 30px;
+  }
+}

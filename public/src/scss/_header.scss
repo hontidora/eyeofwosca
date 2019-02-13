@@ -1,0 +1,86 @@
+.header {
+  @include media-breakpoint-up(lg) {
+    height: 730px;
+    padding-bottom: 0;
+  }
+
+  padding-bottom: 50px;
+
+  &__container {
+    @extend .container;
+    position: relative;
+  }
+
+  &__background {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -20;
+  }
+
+  &__content {
+    @include media-breakpoint-up(lg) {
+      left: 290px;
+      top: 346px;
+      position: absolute;
+    }
+  }
+
+  &__description {
+    @include media-breakpoint-up(lg) {
+      width: 270px;
+      position: absolute;
+      right: -220px;
+      top: -150px;
+    }
+  }
+
+  &__title {
+    @include media-breakpoint-up(lg) {
+      line-height: 78px;
+      font-size: 80px;
+    }
+    width: 340px;
+    line-height: 50px;
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+
+  &__nav {
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 200px;
+      text-align: right;
+      padding-top: 35px;
+    }
+    @extend .list-unstyled;
+    margin-bottom: 50px;
+    padding-top: 10px;
+  }
+
+  &__nav-item {
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      padding-left: 20px;
+      line-height: 16px;
+    }
+    font-weight: 500;
+    line-height: 42px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  &__logo {
+    @include media-breakpoint-down(md) {
+     display: none;
+    }
+    position: absolute;
+    top: 15px;
+  }
+
+  &__scroll {
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+    margin-top: 100px;
+  }
+}

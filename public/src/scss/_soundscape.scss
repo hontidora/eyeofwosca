@@ -1,0 +1,44 @@
+.soundscapes {
+  @extend .dark;
+
+  &__container {
+    @extend .container;
+  }
+
+  &__row {
+    @extend .row;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  .item {
+    @extend .col-md-3, .col-sm-6;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #ACACAC;
+    padding: 0 5px;
+
+    &:hover {
+      color: #ACACAC;
+    }
+
+    &__img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    &__title,
+    &__description,
+    &__year {
+      display: block;
+    }
+
+    &__title {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+  }
+}

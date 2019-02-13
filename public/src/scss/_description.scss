@@ -1,0 +1,17 @@
+.description {
+  @extend .dark;
+
+  &__container {
+    @extend .container;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__text {
+      width: 590px;
+    }
+  }
+}
