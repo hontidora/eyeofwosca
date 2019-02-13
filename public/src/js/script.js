@@ -57,28 +57,6 @@
 })();
 
 (function () {
-    let jsSocialShares = document.querySelectorAll(".contact__item--share a");
-    if (jsSocialShares) {
-        [].forEach.call(jsSocialShares, function (anchor) {
-            anchor.addEventListener("click", function (e) {
-                e.preventDefault();
-
-                windowPopup(this.href, 500, 400);
-            });
-        });
-    }
-
-    function windowPopup(url, width, height) {
-        let left = (screen.width / 2) - (width / 2),
-            top = (screen.height / 2) - (height / 2);
-
-        window.open(
-            url, "", "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=" + width + ",height=" + height + ",top=" + top + ",left=" + left
-        );
-    }
-})();
-
-(function () {
     let anchorlinks = document.querySelectorAll('a[href^="#"]')
 
     for (let item of anchorlinks) {
