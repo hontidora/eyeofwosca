@@ -71,3 +71,13 @@
         })
     }
 })();
+
+(function () {
+    var collapse = document.getElementById('nav');
+
+    function toggleMenu() {
+        collapse.classList.toggle('show');
+    }
+
+    document.getElementById('toggler').addEventListener('click', toggleMenu, false);
+})();

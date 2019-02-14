@@ -17,13 +17,27 @@
     <img src="public/dist/img/main.jpg" class="header__background" alt="eye of wosca">
 
     <div class="header__container">
-        <img src="public/dist/img/logo.png" class="header__logo" alt="eye of wosca">
+        <div class="header__navbar">
+            <img src="public/dist/img/logo.png" class="header__logo" alt="eye of wosca">
 
-        <ul class="header__nav">
-            <li class="header__nav-item"><a href="#soundscapes">Soundscapes</a></li>
-            <li class="header__nav-item"><a href="#global">Global explorer</a></li>
-            <li class="header__nav-item"><a href="#contact">Contact</a></li>
-        </ul>
+            <button class="header__navbar-toggler" id="toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="public/dist/img/hamburger.png" class="header__hamburger" alt="eye of wosca">
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="header__nav">
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#soundscapes">Soundscapes</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#global">Global explorer</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
         <div class="header__content">
             <h1 class="header__title">Inner journey</h1>
