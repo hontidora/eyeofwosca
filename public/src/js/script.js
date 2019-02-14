@@ -74,10 +74,12 @@
 
 (function () {
     var collapse = document.getElementById('nav');
+    var toggler = document.getElementById('toggler');
 
     function toggleMenu() {
         collapse.classList.toggle('show');
     }
 
-    document.getElementById('toggler').addEventListener('click', toggleMenu, false);
+    toggler.addEventListener('click', toggleMenu, false);
+    toggler.addEventListener('touchstart', toggleMenu, false);
 })();
