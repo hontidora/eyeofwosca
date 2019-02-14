@@ -9,5 +9,10 @@
         margin-right: 40px;
       }
     }
+
+    @include media-breakpoint-down(md) {
+      width: 80px;
+      text-align: center;
+    }
   }
 }

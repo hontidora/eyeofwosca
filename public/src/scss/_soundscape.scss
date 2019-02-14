@@ -10,6 +10,9 @@
   }
 
   &__title {
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
     text-transform: uppercase;
     margin-bottom: 30px;
   }
