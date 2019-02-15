@@ -73,13 +73,12 @@
 })();
 
 (function () {
-    var collapse = document.getElementById('nav');
-    var toggler = document.getElementById('toggler');
+    let collapse = document.getElementById('nav');
+    let toggler = document.getElementById('toggler');
 
     function toggleMenu() {
         collapse.classList.toggle('show');
     }
 
     toggler.addEventListener('click', toggleMenu, false);
-    toggler.addEventListener('touchstart', toggleMenu, false);
 })();
