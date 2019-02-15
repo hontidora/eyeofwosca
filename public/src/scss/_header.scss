@@ -48,55 +48,6 @@
     text-transform: uppercase;
   }
 
-  &__navbar {
-    @include media-breakpoint-down(md) {
-      text-align: right;
-      justify-content: flex-end;
-    }
-    @extend .navbar, .navbar-expand-lg;
-    padding: 0;
-
-    &-toggler {
-      @extend .navbar-toggler;
-
-      &:focus {
-        outline: none;
-      }
-    }
-  }
-
-  &__nav {
-    @include media-breakpoint-up(lg) {
-      margin-bottom: 200px;
-      text-align: right;
-      padding-top: 35px;
-    }
-    @extend .navbar-nav, .ml-auto;
-    margin-bottom: 50px;
-    padding-top: 10px;
-  }
-
-  &__nav-item {
-    @extend .nav-item;
-    @include media-breakpoint-up(lg) {
-      display: inline-block;
-      padding-left: 20px;
-      line-height: 16px;
-    }
-    font-weight: 500;
-    line-height: 42px;
-    font-size: 16px;
-    text-transform: uppercase;
-  }
-
-  &__logo {
-    @include media-breakpoint-down(md) {
-     display: none;
-    }
-    position: absolute;
-    top: 15px;
-  }
-
   &__scroll {
     @include media-breakpoint-down(md) {
       display: none;

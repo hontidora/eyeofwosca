@@ -77,7 +77,7 @@
     let toggler = document.getElementById('toggler');
 
     function toggleMenu() {
-        collapse.classList.toggle('show');
+        collapse.classList.toggle('menu__collapse--show');
     }
 
     toggler.addEventListener('click', toggleMenu, false);
