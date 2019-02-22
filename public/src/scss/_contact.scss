@@ -14,10 +14,18 @@
       width: 62px;
       text-align: center;
     }
+
+    &--share {
+      &:not(:last-of-type) {
+        margin-right: 40px;
+      }
+    }
   }
 
   &__img {
-    @include img-fluid;
-    width: 50px;
+    @include media-breakpoint-down(sm) {
+      width: 50px;
+      text-align: center;
+    }
   }
 }
