@@ -1,9 +1,7 @@
 .header {
-  @include media-breakpoint-up(lg) {
-    padding-bottom: 0;
+  @include media-breakpoint-down(md) {
+    padding-bottom: 50px;
   }
-
-  padding-bottom: 50px;
 
   &__container {
     @include media-breakpoint-up(lg) {
@@ -25,6 +23,10 @@
       left: 290px;
       top: 346px;
       position: absolute;
+    }
+    @include media-breakpoint-down(md) {
+      padding-left: 40px;
+      padding-right: 40px;
     }
   }
 

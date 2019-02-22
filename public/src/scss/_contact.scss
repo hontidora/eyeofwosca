@@ -10,9 +10,14 @@
       }
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-between(sm, md) {
       width: 62px;
       text-align: center;
     }
+  }
+
+  &__img {
+    @include img-fluid;
+    width: 50px;
   }
 }

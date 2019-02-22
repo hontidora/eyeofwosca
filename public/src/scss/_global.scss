@@ -18,6 +18,10 @@
       flex-direction: row;
       justify-content: flex-start;
     }
+    @include media-breakpoint-down(md) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
 
     @extend .container;
     height: 160px;

@@ -3,6 +3,10 @@
 
   &__container {
     @extend .container;
+    @include media-breakpoint-down(md) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
   }
 
   &__title {
