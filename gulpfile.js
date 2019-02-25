@@ -16,6 +16,7 @@ function styles () {
 function watch () {
   gulp.watch('./public/src/scss/**/*.scss', styles)
   gulp.watch('./public/src/img/**/*', img)
+  gulp.watch('./public/src/js/**/*', script)
 }
 
 function img () {
@@ -25,10 +26,18 @@ function img () {
     .pipe(gulp.dest('./public/dist/img/'))
 }
 
+function script () {
+  const scripts = './public/src/js/**/*'
+
+  return gulp.src([scripts])
+  .pipe(gulp.dest('./public/dist/js/'))
+}
+
+
 exports.watch = watch
 exports.styles = styles
 exports.img = img
 
-const build = gulp.series(gulp.parallel(styles, img))
+const build = gulp.series(gulp.parallel(styles, img, script))
 gulp.task('default', build)
 
