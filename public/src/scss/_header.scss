@@ -1,11 +1,12 @@
 .header {
   @include media-breakpoint-down(md) {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
+  overflow-x: hidden;
 
   &__container {
     @include media-breakpoint-up(lg) {
-      height: 730px;
+      height: 633px;
     }
     @extend .container;
     position: relative;
@@ -21,7 +22,7 @@
   &__content {
     @include media-breakpoint-up(lg) {
       left: 290px;
-      top: 346px;
+      top: 260px;
       position: absolute;
     }
     @include media-breakpoint-down(md) {
@@ -36,6 +37,10 @@
       position: absolute;
       right: -220px;
       top: -150px;
+    }
+
+    p:last-of-type {
+      margin-bottom: 0;
     }
   }
 
