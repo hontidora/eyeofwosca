@@ -1,14 +1,23 @@
 .menu {
   @include media-breakpoint-down(md) {
-    text-align: right;
-    justify-content: flex-end;
+    background-color: #1C1C1C;
+    padding: 0;
+    margin-bottom: 40px;
   }
-
   @extend .navbar, .navbar-expand-lg;
-  padding: 0;
+
+  &__container {
+    @include media-breakpoint-down(md) {
+      text-align: right;
+      justify-content: flex-end !important;
+      padding: 0 40px !important;
+    }
+    @extend .container;
+  }
 
   &__toggler {
     @extend .navbar-toggler;
+    padding: 10px 0;
 
     &:focus {
       outline: none;
@@ -28,7 +37,7 @@
       max-height: 0;
 
       &--show {
-        max-height: 190px;
+        max-height: 160px;
         -webkit-transition: max-height 1s;
         -moz-transition: max-height 1s;
         -ms-transition: max-height 1s;
@@ -40,13 +49,11 @@
 
   &__nav {
     @include media-breakpoint-up(lg) {
-      margin-bottom: 200px;
       text-align: right;
       padding-top: 35px;
     }
     @extend .navbar-nav, .ml-auto;
-    margin-bottom: 50px;
-    padding-top: 10px;
+    padding-bottom: 30px;
   }
 
   &__nav-item {
